@@ -1,0 +1,2 @@
+This is a test message from child process
+This is a test message from parent process
