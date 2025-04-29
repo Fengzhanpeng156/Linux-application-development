@@ -40,7 +40,7 @@ void *output_thread(void*argv){
 }
 
 int main(){
-    pthread_t pid_input;
+    pthread_t pid_input;//线程标识符
     pthread_t pid_output;
 
     buf = malloc(BUF_LEN);
