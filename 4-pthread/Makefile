@@ -38,3 +38,36 @@ rwlock_rw_alternate: rwlock_rw_alternate.c
 	-./$@
 	-rm ./$@
 
+rwlock_write_hungry: rwlock_write_hungry.c
+	-$(CC) -o $@ $^ -pthread
+	-./$@
+	-rm ./$@
+
+rwlock_hungry_solved: rwlock_hungry_solved.c
+	-$(CC) -o $@ $^ -pthread
+	-./$@
+	-rm ./$@
+
+condition_var: condition_var.c
+	-$(CC) -o $@ $^ -pthread
+	-./$@
+	-rm ./$@
+condition_var_copy: condition_var_copy.c
+	-$(CC) -o $@ $^ -pthread
+	-./$@
+	-rm ./$@
+
+unnamed_sem_bin_process_condition: unnamed_sem_bin_process_condition.c
+	-$(CC) -o $@ $^ -pthread -lrt
+	-./$@
+	-rm ./$@
+
+unnamed_sem_bin_process:unnamed_sem_bin_process.c
+	-$(CC) -o $@ $^ -pthread -lrt
+	-./$@
+	-rm ./$@
+unnamed_sem_count_thread: unnamed_sem_count_thread.c
+	-$(CC) -o $@ $^ -pthread -lrt
+	-./$@
+	-rm ./$@
+
