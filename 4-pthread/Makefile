@@ -71,3 +71,13 @@ unnamed_sem_count_thread: unnamed_sem_count_thread.c
 	-./$@
 	-rm ./$@
 
+named_sem_bin: named_sem_bin.c
+	-$(CC) -o $@ $^ -pthread -lrt
+	-./$@
+	-rm ./$@
+
+named_sem_count: named_sem_count.c
+	-$(CC) -o $@ $^ -pthread -lrt
+	-./$@
+	-rm ./$@
+
